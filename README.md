@@ -1,73 +1,100 @@
-# Welcome to your Lovable project
+# Portfolio Showcase Project
 
-## Project info
+A modern portfolio showcase built with React, Vite, and Shadcn/UI components.
 
-**URL**: https://lovable.dev/projects/5b21cd4a-8aa9-47d2-9074-dfdfc641785f
+## Features
+- Modern React with TypeScript
+- Fully responsive design
+- Component library using Shadcn/UI
+- Dark/Light theme support
+- Fast build with Vite
+- Clean and maintainable code structure
 
-## How can I edit this code?
+## Prerequisites
+- Node.js 18.x or higher
+- npm or yarn package manager
 
-There are several ways of editing your application.
+## Setup and Installation
+1. Clone the repository
+   ```bash
+   git clone [repository-url]
+   cd [project-directory]
+   ```
 
-**Use Lovable**
+2. Install dependencies
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5b21cd4a-8aa9-47d2-9074-dfdfc641785f) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Environment Variables
+Copy the example environment file:
+```bash
+cp .env.example .env
 ```
 
-**Edit a file directly in GitHub**
+Configure the following environment variables in your `.env` file:
+- `VITE_SITE_URL`: Your site's URL (default: http://localhost:8080)
+- `VITE_CONTACT_EMAIL`: Your contact email
+- `VITE_GITHUB_URL`: Your GitHub profile URL
+- `VITE_LINKEDIN_URL`: Your LinkedIn profile URL
+- `VITE_TWITTER_URL`: Your Twitter profile URL
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Optional configurations:
+- API Configuration (if needed)
+- Analytics tracking (if needed)
 
-**Use GitHub Codespaces**
+## Development
+Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+The server will start at http://localhost:8080
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Building for Production
+Build the project:
+```bash
+npm run build
+# or
+yarn build
+```
+The build output will be in the `dist` directory.
 
-## What technologies are used for this project?
+## Deployment
+The project includes deploy scripts for various platforms:
 
-This project is built with:
+### Vercel
+```bash
+npm run deploy:vercel
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Netlify
+```bash
+npm run deploy:netlify
+```
 
-## How can I deploy this project?
+### GitHub Pages
+```bash
+npm run deploy:gh-pages
+```
 
-Simply open [Lovable](https://lovable.dev/projects/5b21cd4a-8aa9-47d2-9074-dfdfc641785f) and click on Share -> Publish.
+Before deployment:
+1. Build your project: `npm run build`
+2. Make sure your environment variables are properly set
+3. Choose your preferred deployment platform
+4. Run the corresponding deployment script
 
-## Can I connect a custom domain to my Lovable project?
+The built project can be deployed to any static hosting service:
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static file hosting
 
-Yes, you can!
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+[Add your chosen license]
